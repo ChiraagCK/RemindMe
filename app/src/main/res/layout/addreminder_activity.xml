@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AddReminder_Activity">
+    <!--TODO: Update blank fragment layout-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/relative_main">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/person_name"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/linear_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/code"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="+91"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="@string/mob_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/fetch_contact"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:src="@mipmap/contact_icon" />
+
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_contact"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/birthday_msg"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/linear_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="@string/rem_date"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/fetch_date"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:src="@mipmap/calendar_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_date"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="@string/rem_time"
+                android:inputType="text"
+                android:maxLength="10"
+                android:text="0:1"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/fetch_time"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:src="@mipmap/clock_icon" />
+        </LinearLayout>
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="REMIND ME"
+            android:id="@+id/savebtn"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear_time"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+</ScrollView>

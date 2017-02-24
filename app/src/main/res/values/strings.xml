@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BirthdayReminder</string>
+    <string name="title_activity_upcoming_">Upcoming_Activity</string>
+    <string name="title_activity_all_">All_Activity</string>
+    <string name="title_activity_home_">Remind Me</string>
+    <string name="person_name">Person\'s Name</string>
+    <string name="birthday_msg">Birthday Message</string>
+    <string name="mob_number">Mobile Number</string>
+    <string name="rem_date">Reminder Date(dd-M-yyyy)</string>
+    <string name="rem_time">Reminder Time(h:m)</string>
+</resources>
